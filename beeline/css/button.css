@@ -1,0 +1,184 @@
+.btn_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    width: auto;
+    height: auto;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn_main:hover {
+    background: linear-gradient(90deg, #6B69F9 0%, #9898f3 100%);
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+}
+
+.btn_main:active {
+    background: #9898f3;
+    box-shadow: 0px 0px 12px rgba(179, 179, 248, 0.5);
+}
+
+.btn_one {
+    font: 400 12px/17px Jost;
+    padding: 0.5em 1em;
+}
+
+.btn_two {
+    font: 400 13px/10px Jost;
+    padding: 0.3em 0.5em;
+}
+
+.btn_three {
+    font: 400 12px/17px Jost;
+    padding: 0.5em 1em;
+}
+
+.btn_slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    mix-blend-mode: normal;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.btn_slide:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.btn_slide:active {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.slide_right {
+    transform: rotate(90deg);
+}
+
+.slide_left {
+    transform: rotate(-90deg);
+}
+
+.bth_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font: 400 13px/10px Jost;
+    width: auto;
+    height: 24px;
+    padding: 7px 9px;
+    background: rgba(255, 255, 255, 0.06);
+    mix-blend-mode: normal;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.bth_header:not(:last-child) {
+    margin-right: 10px;
+}
+
+.bth_header:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bth_header:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.bth_header-dop {
+    color: rgba(255, 255, 255, 0.15);
+    font: 400 11px/10px Jost;
+    padding-left: 3px;
+}
+
+.bth_header-dop span {
+    color: #FFFFFF;
+    font: 600 11px/10px Jost;
+    margin-right: 4px;
+}
+
+.header_left__buttons_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #FF4738;
+    box-shadow: 0px 0px 12px rgba(255, 71, 56, 0.5);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 42px;
+    /* ширина */
+    height: 22px;
+    /* высота */
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 15px;
+    background: transparent;
+    /* цвет фона */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+    /* анимация */
+}
+
+input[type="checkbox"]:after {
+    content: "";
+    height: 16px;
+    /* высота кнопки */
+    width: 16px;
+    /* ширина кнопки */
+    background: #6F6EFF;
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+    border-radius: 50%;
+    top: 2px;
+    /* положение кнопки по вертикали относительно основы */
+    left: 22px;
+    /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms;
+    /* анимация */
+    position: absolute;
+    z-index: 1;
+}
+
+input:checked[type="checkbox"]:after {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.2);
+    left: 2px;
+}
+
+@media (max-width: 390px) {
+    .bth_header {
+        font: 400 9px/10px Jost;
+        height: 14px;
+        width: fit-content;
+        padding: 7px 9px;
+        border-radius: 3px;
+    }
+    .header_left__buttons_inner {
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+    }
+    .header_left__buttons_inner img {
+        width: 5px;
+        height: 12px;
+    }
+    .btn_slide{
+        display: none;
+    }
+}

@@ -1,0 +1,93 @@
+section{
+    width: 100%;
+    padding: 40px 55px 20px 55px ;
+}
+.section__secondline{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section__firstline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+.section__firstline p{
+    color: rgba(255, 255, 255, 0.4);
+    font: 400 11px/16px Jost;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.section__firstline h1{
+    color: rgba(255, 255, 255, 1);
+    font: 400 22px/18px Jost;
+}
+.section__firstline_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn_main,
+.btn_one{
+    margin-right: 10px;
+}
+.btn_slide:nth-child(2){
+    margin-right: 5px;
+} 
+.section__secondline__item{
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 294px;
+    background: rgba(255, 255, 255, 0.04);
+    mix-blend-mode: normal;
+    border-radius: 6px;
+}
+.section__secondline__item_inner1{
+    position: relative;
+}
+.section__secondline__item_inner1 img{
+    border-radius: 6px 6px 0 0 ;
+}
+.section__secondline__item_inner1 button{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.section__secondline__item_inner2{ 
+    display: block;
+    height: 88px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.1);
+}
+.section__secondline__item_inner2 h2{
+    color: rgba(255, 255, 255, 1);
+    font: 400 16px/12px Jost;
+    margin-bottom: 10px;
+}
+.section__secondline__item_inner2 p{
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 14px/18px Jost;
+}
+.section__secondline__item_inner3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.section__secondline__item_inner3 p{
+    color: rgba(255, 255, 255, 1);
+    font: 400 13px/10px Jost;
+}
+@media (max-width: 390px){
+    .section__secondline__item{
+        width: calc(20% -16px);
+    }
+    .section__secondline__item{
+        margin-bottom: 15px;
+    }
+}

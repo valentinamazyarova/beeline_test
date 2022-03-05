@@ -1,0 +1,31 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-right: 110px;
+}
+
+.logo_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    color: #FFFFFF;
+    font: 700 22.1818px/32px Jost;
+    margin-top: -8px;
+}
+
+.logo p {
+    color: #FFFFFF;
+    font: 500 10.7331px/16px Jost;
+}
+
+@media (max-width: 390px) {
+    .logo {
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+}

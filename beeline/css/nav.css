@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 24px;
+    width: 300px;
+    max-width: 100%;
+    padding-right: 1.73em;
+    margin-left: 55px;
+    border-right: 1px solid rgba(216, 216, 216, 0.1);
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.6);
+    font: 400 14px/10px Jost;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255);
+}
+
+nav a:active {
+    color: rgba(255, 255, 255, 0.3);
+    font: 400 14px/10px Jost;
+}
+
+@media (max-width: 390px) {
+    nav {
+        display: none;
+    }
+}

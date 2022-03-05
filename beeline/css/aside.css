@@ -1,0 +1,224 @@
+aside{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 100%;
+    max-width: 100%;
+    padding-top: 100px;
+    padding-bottom: 37px;
+    background: rgba(156, 165, 236, 0.04);
+    z-index: 9;
+}
+aside ul{
+    color: #FFFFFF;
+    font: 400 14px/20px Jost;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.06);
+    padding-left: 30px;
+}
+
+aside ul li{
+    margin-bottom: 15px;
+}
+aside ul li:last-child{
+    margin-bottom: 20px;
+}
+.aside__ul__li_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    
+}
+.aside__ul__li_block img{
+   transition: 0.3s; 
+}
+aside ul li:hover{
+    color: #6F6EFF;
+}
+aside ul ul{
+    padding-left: 20px;
+    border-bottom: 0px solid rgba(216, 216, 216, 0.06);  
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 500ms linear;
+    will-change: opacity, max-height;
+}
+.dop3{
+    opacity: 1;
+    max-height: 600px;
+    transition: all 500ms linear;
+    will-change: opacity, max-height;
+} 
+aside ul li:hover > .aside__ul__li_block img{
+    transform: rotate(180deg);
+}
+.text{
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 14px/20px Jost; 
+}
+.text:hover{
+    color: rgba(255, 255, 255, 1);; 
+}
+aside ul ul li .img_HTML-CSS{
+    margin-right: 24px; 
+}
+aside ul ul li .img_GIT{
+    margin-right: 27px; 
+}
+aside ul ul li .img_JavaScript{
+    margin-right: 28px; 
+}
+aside ul ul li .img_React{
+    margin-right: 27px; 
+}
+aside ul ul li .img_Angular{
+    margin-right: 25px; 
+}
+aside ul ul li .img_Data{
+    margin-right: 25px; 
+}
+aside ul ul li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0;
+}
+aside ul ul li:first-child{
+    margin-top: 15px;
+}
+.active{
+    display: none;
+    position: absolute;
+    padding-left: 50px;
+    left: 0;
+    width: 280px;
+    height: 40px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 93.97%);
+    mix-blend-mode: normal;
+    opacity: 0.03;
+} 
+
+.active-line{
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 40px;
+    background: #6F6EFF;
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+    display: none;
+}
+aside ul ul li .img_HTML-CSS-active{
+    margin-right: 24px;
+    display: none;
+}
+aside ul ul li .img_GIT-active{
+    margin-right: 27px;
+    display: none;
+}
+aside ul ul li .img_JavaScript-active{
+    margin-right: 28px;
+    display: none;
+}
+aside ul ul li .img_React-active{
+    margin-right: 27px;
+    display: none;
+}
+aside ul ul li .img_Angular-active{
+    margin-right: 25px;
+    display: none;
+}
+aside ul ul li .img_Data-active{
+    margin-right: 25px;
+    display: none;
+}
+aside ul ul li:hover  .active {
+    display: block;
+}
+aside ul ul li:hover  .active-line {
+    display: block;
+}
+aside ul ul li:hover  .dop {
+    display: none;
+}
+aside ul ul li:hover  .dop2 {
+    display: block;
+}
+aside ul ul li:active .active{
+    background: #6F6EFF;
+}
+.aside__footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+.aside__footer p{
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 14px/20px Jost; 
+    margin-right: 60px;
+}
+.aside_wrapper{
+    display: none;
+}
+aside nav{
+    display: none;
+}
+aside .header_left__buttons{
+    display: none;
+}
+@media (max-width: 390px){
+  aside{
+      top: 70px;
+      left: -280px;
+      height: 600px;
+      transition: 1s;
+      padding-top: 10px;
+      justify-content: flex-start;
+  }
+  .burger_active{
+      left: 0;
+  }
+  .aside_wrapper{
+    position: fixed;
+    top: 70px;
+    display: block;
+    background: #2B2C3A;
+    width: 280px;
+    height: 100%;
+    z-index: -3;
+  }
+  aside nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: fit-content;
+    width: fit-content;
+    max-width: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-right: 0;
+}
+aside nav a{
+    margin-bottom: 5px;
+}
+aside .header_left__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+}
+
+

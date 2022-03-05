@@ -1,0 +1,15 @@
+article {
+    position: relative;
+    left: 280px;
+    display: flex;
+    flex-direction: column;
+    width: calc(1440px - 280px);
+    max-width: 100%;
+}
+
+@media (max-width: 390px) {
+    article {
+        left: 0;
+        width: 390px;
+    }
+}

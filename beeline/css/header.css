@@ -1,0 +1,183 @@
+header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    max-width: 100%;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 45px;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.1);
+    z-index: 5;
+}
+
+.header_wrapper-collor {
+    position: fixed;
+    top: 0;
+    width: 1440px;
+    max-width: 100%;
+    height: 70px;
+    background: #2B2C3A;
+    z-index: 2;
+}
+
+.header_wrapper-collor2 {
+    position: fixed;
+    top: 0;
+    width: 1440px;
+    max-width: 100%;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.0001) 0%, rgba(255, 255, 255, 0.1) 100%);
+    mix-blend-mode: normal;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+.header_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_left__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.header_left__user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_left__user_block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.header_left__user_block_name {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_left__user_block_name p {
+    color: #FFFFFF;
+    font: 400 14px/10px Jost;
+    margin-bottom: 9px;
+}
+
+.header_left__user_block_status p {
+    color: #24CB8D;
+    font: 600 13px/10px Jost;
+    margin-left: 5px;
+}
+
+.header_left__user_block_status p::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    right: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #24CB8D;
+}
+
+.header_left__user_status-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 14px;
+    padding: 2px 11px 2px 8px;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.header_left__user_status-account p {
+    color: #FFFFFF;
+    font: 400 11px/10px Jost;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.burger{
+    display: none;
+}
+
+@media (max-width: 390px) {
+    header {
+        width: 390px;
+        padding-left: 10px;
+        padding-right: 10px;    
+    }
+    .header_wrapper-collor {
+        width: 390px;
+    }
+    .header_wrapper-collor2 {
+        width: 390px;
+    }
+    .header_left__buttons {
+        display: none;
+    }
+    .header_left__user {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header_left__user_avatar img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    .header_left__user_block_name p {
+        font: 400 9px/10px Jost;
+        margin-bottom: 3px;
+    }
+    
+    .header_left__user_block_status p {
+        font: 600 9px/10px Jost;
+        margin-left: 2px;
+    }
+    .header_left__user_block_status p::before {
+        right: 3px;
+    }
+    .header_left__user_status-account {
+        padding: 2px 4px;
+        border-radius: 3px;
+        margin-left: 5px;
+    }
+    .header_left__user_status-account p {
+        font: 400 9px/10px Jost;
+        margin-bottom: 0;
+    }
+    .burger{
+        position: fixed;
+        top: 30px;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .burger span{
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: rgba(216, 216, 216, 0.5);
+        margin-bottom: 5px;
+    }
+}
